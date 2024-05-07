@@ -8,11 +8,12 @@ const Student = () => {
 
   const handleNameChange = (e) => {
     setName(e.target.value);
-    console.log(setName);
+    console.log(e.target.value);
   };
 
   const handleSave = () => {
     setStudentName(name);
+    console.log(`Saved Name: ${name}`);
   };
 
   return (
